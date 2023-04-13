@@ -30,7 +30,37 @@ const Home = () => {
             Submit
           </button>
         </div>
-        <div className=" bg-white p-6 w-[65%] rounded-md h-fit"></div>
+        <div className=" bg-white p-6 w-[65%] rounded-md h-fit">
+          <h1 className=" text-2xl lg:4xl font-semibold">Question</h1>
+          <p className=" text-gray-500">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam,
+            itaque!
+          </p>
+
+          <div className=" mt-3">
+            <div>
+              <p className=" font-medium lg:text-lg">
+                1. Who is the first black president of the united states ?
+              </p>
+              <div className=" flex items-center gap-3 mb-1">
+                <input type="checkbox" name="" id="" />
+                <p className="capitalize">Joe Biden</p>
+              </div>
+              <div className=" flex items-center gap-3 mb-1">
+                <input type="checkbox" name="" id="" />
+                <p className="capitalize">Ronald Regan</p>
+              </div>
+              <div className=" flex items-center gap-3 mb-1">
+                <input type="checkbox" name="" id="" />
+                <p className="capitalize">Hilary clinton</p>
+              </div>
+              <div className=" flex items-center gap-3 mb-1">
+                <input type="checkbox" name="" id="" />
+                <p className="capitalize">Barcak Obama</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
