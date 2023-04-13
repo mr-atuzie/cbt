@@ -2,9 +2,9 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className=" w-full h-screen bg-green-800 ">
-      <div className=" w-[90%] h-full mx-auto flex flex-col lg:flex-row justify-between items-center">
-        <div className=" bg-white p-6 w-[30%] rounded-md h-fit">
+    <div className=" py-10 ">
+      <div className=" w-[90%] h-full mx-auto flex flex-col lg:flex-row justify-between items-start">
+        <div className=" bg-white p-6 w-[30%] rounded-md shadow-md h-fit">
           <h1 className=" text-2xl lg:4xl font-semibold">Subjects</h1>
 
           <div className=" mt-3">
@@ -30,15 +30,15 @@ const Home = () => {
             Submit
           </button>
         </div>
-        <div className=" bg-white p-6 w-[65%] rounded-md h-fit">
-          <h1 className=" text-2xl lg:4xl font-semibold">Question</h1>
+        <div className=" bg-white p-6 w-[65%] rounded-md shadow-md h-fit">
+          <h1 className=" text-2xl lg:4xl font-semibold">Questions</h1>
           <p className=" text-gray-500">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam,
             itaque!
           </p>
 
           <div className=" mt-3">
-            <div>
+            <div className=" mb-3">
               <p className=" font-medium lg:text-lg">
                 1. Who is the first black president of the united states ?
               </p>
@@ -59,7 +59,95 @@ const Home = () => {
                 <p className="capitalize">Barcak Obama</p>
               </div>
             </div>
+            <div className=" mb-3">
+              <p className=" font-medium lg:text-lg">
+                2. Who is the first black president of the united states ?
+              </p>
+              <div className=" flex items-center gap-3 mb-1">
+                <input type="checkbox" name="" id="" />
+                <p className="capitalize">Joe Biden</p>
+              </div>
+              <div className=" flex items-center gap-3 mb-1">
+                <input type="checkbox" name="" id="" />
+                <p className="capitalize">Ronald Regan</p>
+              </div>
+              <div className=" flex items-center gap-3 mb-1">
+                <input type="checkbox" name="" id="" />
+                <p className="capitalize">Hilary clinton</p>
+              </div>
+              <div className=" flex items-center gap-3 mb-1">
+                <input type="checkbox" name="" id="" />
+                <p className="capitalize">Barcak Obama</p>
+              </div>
+            </div>
+            <div className=" mb-3">
+              <p className=" font-medium lg:text-lg">
+                3. Who is the first black president of the united states ?
+              </p>
+              <div className=" flex items-center gap-3 mb-1">
+                <input type="checkbox" name="" id="" />
+                <p className="capitalize">Joe Biden</p>
+              </div>
+              <div className=" flex items-center gap-3 mb-1">
+                <input type="checkbox" name="" id="" />
+                <p className="capitalize">Ronald Regan</p>
+              </div>
+              <div className=" flex items-center gap-3 mb-1">
+                <input type="checkbox" name="" id="" />
+                <p className="capitalize">Hilary clinton</p>
+              </div>
+              <div className=" flex items-center gap-3 mb-1">
+                <input type="checkbox" name="" id="" />
+                <p className="capitalize">Barcak Obama</p>
+              </div>
+            </div>
+            <div className=" mb-3">
+              <p className=" font-medium lg:text-lg">
+                4. Who is the first black president of the united states ?
+              </p>
+              <div className=" flex items-center gap-3 mb-1">
+                <input type="checkbox" name="" id="" />
+                <p className="capitalize">Joe Biden</p>
+              </div>
+              <div className=" flex items-center gap-3 mb-1">
+                <input type="checkbox" name="" id="" />
+                <p className="capitalize">Ronald Regan</p>
+              </div>
+              <div className=" flex items-center gap-3 mb-1">
+                <input type="checkbox" name="" id="" />
+                <p className="capitalize">Hilary clinton</p>
+              </div>
+              <div className=" flex items-center gap-3 mb-1">
+                <input type="checkbox" name="" id="" />
+                <p className="capitalize">Barcak Obama</p>
+              </div>
+            </div>
+            <div className=" mb-3">
+              <p className=" font-medium lg:text-lg">
+                5. Who is the first black president of the united states ?
+              </p>
+              <div className=" flex items-center gap-3 mb-1">
+                <input type="checkbox" name="" id="" />
+                <p className="capitalize">Joe Biden</p>
+              </div>
+              <div className=" flex items-center gap-3 mb-1">
+                <input type="checkbox" name="" id="" />
+                <p className="capitalize">Ronald Regan</p>
+              </div>
+              <div className=" flex items-center gap-3 mb-1">
+                <input type="checkbox" name="" id="" />
+                <p className="capitalize">Hilary clinton</p>
+              </div>
+              <div className=" flex items-center gap-3 mb-1">
+                <input type="checkbox" name="" id="" />
+                <p className="capitalize">Barcak Obama</p>
+              </div>
+            </div>
           </div>
+
+          <button className=" float-right bg-black text-white font-medium uppercase rounded px-8 py-3 mt-3">
+            Next
+          </button>
         </div>
       </div>
     </div>
