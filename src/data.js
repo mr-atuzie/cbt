@@ -6,7 +6,7 @@ export const exam = [
       {
         question: "I live in Amsterdam.",
         answers: ["In", "Live", "Amsterdam", "I"],
-        answeer: "Amsterdam",
+        answeer: 2,
       },
       {
         question: "I visited the Eiffel Tower in Paris.",

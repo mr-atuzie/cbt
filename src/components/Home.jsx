@@ -11,26 +11,38 @@ const Home = () => {
       setCount(count + 1);
     }
   };
+
+  const handleAnswer = (index, answer) => {
+    console.log({
+      index,
+      answer,
+    });
+  };
+
   return (
     <div className=" py-10 ">
-      <div className=" w-[90%] h-full mx-auto flex flex-col lg:flex-row justify-between items-start">
-        <div className=" bg-white p-6 w-[30%] rounded-md shadow-md h-fit">
+      <div className="w-[95%] lg:w-[90%] h-full mx-auto flex flex-col lg:flex-row justify-between items-start">
+        <div className=" w-full bg-white p-6 lg:w-[30%] rounded-md shadow-md h-fit">
           <h1 className=" text-2xl lg:4xl font-semibold">Subjects</h1>
 
-          <div className=" mt-3">
-            {exam.map((subject) => {
+          <div className=" mt-3 flex gap-4">
+            {exam.map((subject, index) => {
               return (
-                <div className=" capitalize font-medium text-gray-800 mb-1 flex items-center justify-between">
+                <div
+                  onClick={() => setCount(index)}
+                  key={subject.name}
+                  className=" capitalize font-medium text-gray-800 mb-1 flex items-center justify-between"
+                >
                   <p
                     className={
                       subject.name === exam[count].name
-                        ? "text-green-500 text-xl font-semibold italic"
+                        ? "text-green-500 font-semibold "
                         : `lg:text-lg`
                     }
                   >
                     {subject.name}
                   </p>
-                  <p className=" text-xl">40/100</p>
+                  {/* <p className=" text-xl">40/100</p> */}
                 </div>
               );
             })}
@@ -40,7 +52,7 @@ const Home = () => {
             Submit
           </button>
         </div>
-        <div className=" bg-white p-6 w-[65%] rounded-md shadow-md h-fit">
+        <div className=" w-full bg-white p-6 lg:w-[65%] rounded-md shadow-md h-fit">
           <div className=" flex justify-between">
             <div>
               <h1 className=" text-2xl lg:4xl font-semibold capitalize">
@@ -65,8 +77,13 @@ const Home = () => {
                   </p>
 
                   {item.answers.map((ans, inx) => {
+                    let answer = item.answeer;
                     return (
-                      <div key={inx} className=" flex items-center gap-3 mb-1">
+                      <div
+                        onClick={() => handleAnswer(inx, answer)}
+                        key={inx}
+                        className=" flex items-center gap-3 mb-1"
+                      >
                         <input type="checkbox" name="" id="" />
                         <p className="capitalize">{ans}</p>
                       </div>
