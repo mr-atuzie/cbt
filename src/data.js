@@ -11,22 +11,22 @@ export const exam = [
       {
         question: "I visited the Eiffel Tower in Paris.",
         answers: ["The", "Paris", "Eiffel Tower and Paris", "Eiffel Tower"],
-        answeer: "Eiffel Tower and Paris",
+        answeer: 2,
       },
       {
         question: "Bhutan is a beautiful country.",
         answers: ["A", "beautiful", "country", "Bhutan"],
-        answeer: "Bhutan",
+        answeer: 3,
       },
       {
         question: "Summer is very hot",
         answers: ["Summer", " is", "very", "hot"],
-        answeer: "Summer",
+        answeer: 1,
       },
       {
         question: "The doctor is an expert in his field.",
         answers: ["Doctor", "expert", "field", "the"],
-        answeer: "Doctor",
+        answeer: 1,
       },
     ],
   },
@@ -38,29 +38,29 @@ export const exam = [
         question:
           "What is the highest common factor of the numbers 30 and 132?",
         answers: [6, 10, 67, 1],
-        answeer: 6,
+        answeer: 0,
       },
       {
         question: "123 + 4 - 5 + 67 - 89 = ?",
         answers: [63, 100, 78, 1000],
-        answeer: 100,
+        answeer: 1,
       },
       {
         question: "What is the year 1982 in Roman Numerals?",
         answers: ["MCMLXXXII", "MCMXXXII", "MCCLXXXII", "MCMLXXXIII"],
-        answeer: "MCMLXXXII",
+        answeer: 0,
       },
       {
         question:
           "What is next in the following number series: 256, 289, 324, 361 . . . ?",
         answers: [800, 700, 400, 500],
-        answeer: 400,
+        answeer: 2,
       },
       {
         question:
           "At a Christmas party, everyone shook hands with everyone else. There were a total of 66 handshakes that happened during the party. How many people were present? ",
         answers: [13, 12, 11, 10],
-        answeer: 12,
+        answeer: 1,
       },
     ],
   },
@@ -71,7 +71,7 @@ export const exam = [
       {
         question: "Where did the Olympic Games originate?",
         answers: ["Greece", "nigeria", "england", "france"],
-        answeer: "Greece",
+        answeer: 0,
       },
       {
         question: "Who invented the telephone?",
@@ -81,7 +81,7 @@ export const exam = [
           "Graham potter",
           "Alexander Graham Bell",
         ],
-        answeer: "Alexander Graham Bell",
+        answeer: 3,
       },
       {
         question: "Who was the first American President?",
@@ -91,17 +91,17 @@ export const exam = [
           "joe biden",
           "kamela harris",
         ],
-        answeer: "George Washington",
+        answeer: 1,
       },
       {
         question: "Which country first used paper money?",
         answers: ["Greece", "china", "england", "france"],
-        answeer: "china",
+        answeer: 1,
       },
       {
         question: "Which country gifted the Statue of Liberty to the USA?",
         answers: ["Greece", "china", "england", "france"],
-        answeer: "france",
+        answeer: 3,
       },
     ],
   },
@@ -112,27 +112,27 @@ export const exam = [
       {
         question: "Who is the football player wit the most balon d or?",
         answers: ["pele", "maradona", "cristiano ronaldo", "lionel messi"],
-        answeer: "lionel messi",
+        answeer: 3,
       },
       {
         question: "Who holds the record for Most goals in La Liga?",
         answers: ["pele", "maradona", "cristiano ronaldo", "lionel messi"],
-        answeer: "lionel messi",
+        answeer: 3,
       },
       {
         question: "Who holds the record for Most european golden boot?",
         answers: ["pele", "maradona", "lionel messi", "cristiano ronaldo"],
-        answeer: "lionel messi",
+        answeer: 2,
       },
       {
         question: "Who holds the record for Most Champions League hat-tricks?",
         answers: ["pele", "maradona", "lionel messi", "cristiano ronaldo"],
-        answeer: "lionel messi",
+        answeer: 2,
       },
       {
         question: "Who holds the record for Most goals for one singular club?",
         answers: ["pele", "maradona", "lionel messi", "cristiano ronaldo"],
-        answeer: "lionel messi",
+        answeer: 2,
       },
     ],
   },

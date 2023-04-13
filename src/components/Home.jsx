@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { exam } from "../data";
+import { useDispatch } from "react-redux";
 
 const Home = () => {
   const [count, setCount] = useState(0);
+  const dispatch = useDispatch();
 
   const handleNext = () => {
     if (count === 3) {
@@ -12,20 +14,24 @@ const Home = () => {
     }
   };
 
-  const handleAnswer = (index, answer) => {
+  const handleAnswer = (index, answer, subject) => {
     console.log({
       index,
       answer,
+      subject,
     });
+    // if (index === answer) {
+    //   dispatch({ subject: subject });
+    // }
   };
 
   return (
     <div className=" py-10 ">
       <div className="w-[95%] lg:w-[90%] h-full mx-auto flex flex-col lg:flex-row justify-between items-start">
-        <div className=" w-full bg-white p-6 lg:w-[30%] rounded-md shadow-md h-fit">
+        <div className=" w-full bg-white p-6 lg:w-[30%] rounded shadow-md h-fit mb-6">
           <h1 className=" text-2xl lg:4xl font-semibold">Subjects</h1>
 
-          <div className=" mt-3 flex gap-4">
+          <div className=" mt-3 flex gap-4 lg:gap-2 lg:flex-col">
             {exam.map((subject, index) => {
               return (
                 <div
@@ -78,9 +84,10 @@ const Home = () => {
 
                   {item.answers.map((ans, inx) => {
                     let answer = item.answeer;
+                    let subject = exam[count].name;
                     return (
                       <div
-                        onClick={() => handleAnswer(inx, answer)}
+                        onClick={() => handleAnswer(inx, answer, subject)}
                         key={inx}
                         className=" flex items-center gap-3 mb-1"
                       >
