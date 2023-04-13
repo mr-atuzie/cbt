@@ -34,18 +34,6 @@ const Home = () => {
                 </div>
               );
             })}
-            {/* <div className=" capitalize font-medium text-gray-800 mb-1 flex items-center justify-between">
-              <p className=" lg:text-lg">Mathematics</p>
-              <p className=" text-xl">0</p>
-            </div>
-            <div className=" capitalize font-medium text-gray-800 mb-1 flex items-center justify-between">
-              <p className=" lg:text-lg">History</p>
-              <p className=" text-xl">70/100</p>
-            </div>
-            <div className=" capitalize font-medium text-gray-800 mb-1 flex items-center justify-between">
-              <p className=" lg:text-lg">general knowledge</p>
-              <p className=" text-xl">88/100</p>
-            </div> */}
           </div>
 
           <button className=" bg-black text-white font-medium uppercase rounded px-8 py-3 mt-3">
