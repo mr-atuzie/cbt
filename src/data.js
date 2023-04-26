@@ -21,12 +21,12 @@ export const exam = [
       {
         question: "Summer is very hot",
         answers: ["Summer", " is", "very", "hot"],
-        answeer: 1,
+        answeer: 0,
       },
       {
         question: "The doctor is an expert in his field.",
         answers: ["Doctor", "expert", "field", "the"],
-        answeer: 1,
+        answeer: 0,
       },
     ],
   },

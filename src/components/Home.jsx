@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { exam } from "../data";
 import { useDispatch } from "react-redux";
+import { correctAnswer } from "../redux/resultSlice";
+import SubmitModal from "./SubmitModal";
 
 const Home = () => {
   const [count, setCount] = useState(0);
   const dispatch = useDispatch();
+  const [submit, setSubmit] = useState(false);
 
   const handleNext = () => {
     if (count === 3) {
@@ -14,19 +17,29 @@ const Home = () => {
     }
   };
 
-  const handleAnswer = (index, answer, subject) => {
-    console.log({
-      index,
-      answer,
-      subject,
-    });
-    // if (index === answer) {
-    //   dispatch({ subject: subject });
-    // }
+  const handleAnswer = (index, answer, subject, question) => {
+    dispatch(correctAnswer({ subject, index, answer, question }));
+  };
+
+  const handleList = (index) => {
+    if (index === 0) {
+      return "A";
+    } else if (index === 1) {
+      return "B";
+    } else if (index === 2) {
+      return "C";
+    } else if (index === 3) {
+      return "D";
+    }
   };
 
   return (
     <div className=" py-10 ">
+      {submit && (
+        <div className=" w-full z-40 bg-black/80 h-screen fixed top-0 bottom-0 flex justify-center items-center">
+          <SubmitModal />
+        </div>
+      )}
       <div className="w-[95%] lg:w-[90%] h-full mx-auto flex flex-col lg:flex-row justify-between items-start">
         <div className=" w-full bg-white p-6 lg:w-[30%] rounded shadow-md h-fit mb-6">
           <h1 className=" text-2xl lg:4xl font-semibold">Subjects</h1>
@@ -54,7 +67,10 @@ const Home = () => {
             })}
           </div>
 
-          <button className=" bg-black text-white font-medium uppercase rounded px-8 py-3 mt-3">
+          <button
+            onClick={() => setSubmit(true)}
+            className=" bg-black text-white font-medium uppercase rounded px-8 py-3 mt-3"
+          >
             Submit
           </button>
         </div>
@@ -85,13 +101,16 @@ const Home = () => {
                   {item.answers.map((ans, inx) => {
                     let answer = item.answeer;
                     let subject = exam[count].name;
+                    let question = index;
                     return (
                       <div
-                        onClick={() => handleAnswer(inx, answer, subject)}
+                        onClick={() =>
+                          handleAnswer(inx, answer, subject, question)
+                        }
                         key={inx}
-                        className=" flex items-center gap-3 mb-1"
+                        className=" focus:bg-red-500 cursor-pointer flex items-center gap-2 mb-1"
                       >
-                        <input type="checkbox" name="" id="" />
+                        <div>{handleList(inx)}</div>
                         <p className="capitalize">{ans}</p>
                       </div>
                     );
