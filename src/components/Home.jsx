@@ -49,7 +49,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className=" w-full  h-screen">
+      <div className=" w-full  h-fit">
         <div className=" flex justify-between">
           <div>
             <h1 className=" text-2xl lg:4xl font-semibold capitalize">RULES</h1>
@@ -63,11 +63,34 @@ const Home = () => {
           </div> */}
         </div>
 
-        <div className=" mt-3"></div>
+        <div className=" mt-3">
+          <ol className=" font-medium lg:text-lg">
+            <li className=" mb-2">
+              1. This Exam contains 4 course which includes
+              English,Mathematics,History and Sports
+            </li>
+            <li className=" mb-2">
+              2. Only click next paper when you are done writing the current
+              course
+            </li>
+            <li className=" mb-2">
+              3. Only click submit button when you are done writing all 4 course
+              course
+            </li>
+            <li className=" mb-2">
+              4. After yoy click the submit button , Enter the Name you want to
+              appear on your certificate.
+            </li>
+            <li className=" mb-2">
+              5. After yoy click the submit button , Enter the Email you want to
+              your certificate sent to.
+            </li>
+          </ol>
+        </div>
 
         <button
           onClick={handleNext}
-          className=" float-right bg-black text-white font-medium uppercase rounded px-8 py-3 mt-3"
+          className=" float-right bg-black text-white font-medium uppercase rounded px-8 py-3 mt-6"
         >
           start
         </button>

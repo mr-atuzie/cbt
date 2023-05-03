@@ -14,10 +14,10 @@ function App() {
   const [submit, setSubmit] = useState(false);
   return (
     <BrowserRouter>
-      <div className="  bg-green-800 h-full">
+      <div className="  bg-green-800 min-h-screen">
         {submit && (
           <div className=" w-full z-40 bg-black/80 h-screen fixed top-0 bottom-0 flex justify-center items-center">
-            <SubmitModal />
+            <SubmitModal submit={submit} setSubmit={setSubmit} />
           </div>
         )}
 
