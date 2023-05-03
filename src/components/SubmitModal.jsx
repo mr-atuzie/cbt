@@ -126,8 +126,9 @@ const SubmitModal = ({ submit, setSubmit }) => {
                 Name
               </label>
               <input
+                required
                 className="border  w-full lg:w-[80%] px-4 py-3"
-                type="email"
+                type="text"
                 placeholder="Enter your Fullname"
                 id="name"
                 name="to_name"
@@ -147,6 +148,7 @@ const SubmitModal = ({ submit, setSubmit }) => {
                 Email
               </label>
               <input
+                required
                 className="border  w-full lg:w-[80%] px-4 py-3"
                 type="email"
                 placeholder="Enter email"
