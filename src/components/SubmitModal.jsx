@@ -9,6 +9,7 @@ const SubmitModal = ({ submit, setSubmit }) => {
   const results = useSelector((state) => state.results.scores);
   const form = useRef();
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
 
   const navigate = useNavigate();
 
@@ -23,6 +24,7 @@ const SubmitModal = ({ submit, setSubmit }) => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setSending(true);
 
     emailjs
       .sendForm(
@@ -35,9 +37,11 @@ const SubmitModal = ({ submit, setSubmit }) => {
         (result) => {
           console.log(result.text);
           setSent(true);
+          setSending(false);
         },
         (error) => {
           console.log(error.text);
+          setSending(false);
         }
       );
   };
@@ -168,6 +172,19 @@ const SubmitModal = ({ submit, setSubmit }) => {
               <label>Message</label>
               <textarea value={message} name="message" />
             </div>
+
+            {sending ? (
+              <input
+                className="bg-black text-white mt-4 font-medium uppercase rounded px-8 py-3 "
+                value="Sending..."
+              />
+            ) : (
+              <input
+                className="bg-black text-white mt-4 font-medium uppercase rounded px-8 py-3 "
+                type="submit"
+                value="Send"
+              />
+            )}
 
             <input
               className="bg-black text-white mt-4 font-medium uppercase rounded px-8 py-3 "
