@@ -121,7 +121,7 @@ const SubmitModal = ({ submit, setSubmit }) => {
             <div className=" mb-4">
               <label
                 className=" mb-1 text-gray-700 block font-medium "
-                htmlFor="email"
+                htmlFor="name"
               >
                 Name
               </label>
@@ -129,7 +129,7 @@ const SubmitModal = ({ submit, setSubmit }) => {
                 className="border  w-full lg:w-[80%] px-4 py-3"
                 type="email"
                 placeholder="Enter your Fullname"
-                id="email"
+                id="name"
                 name="to_name"
               />
             </div>
