@@ -185,12 +185,6 @@ const SubmitModal = ({ submit, setSubmit }) => {
                 value="Send"
               />
             )}
-
-            <input
-              className="bg-black text-white mt-4 font-medium uppercase rounded px-8 py-3 "
-              type="submit"
-              value="Send"
-            />
           </form>
         </div>
       )}
