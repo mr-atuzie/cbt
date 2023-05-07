@@ -157,7 +157,7 @@ const SubmitModal = ({ submit, setSubmit }) => {
                 type="email"
                 placeholder="Enter email"
                 id="email"
-                name="user_email"
+                name="your_email"
               />
             </div>
 
