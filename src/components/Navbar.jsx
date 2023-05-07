@@ -7,7 +7,7 @@ const Navbar = ({ exam, count, setCount, setSubmit }) => {
   console.log(path);
 
   return (
-    <div className=" w-full bg-white p-6 lg:w-[25%] rounded shadow-md  mb-6">
+    <div className=" w-full bg-white p-4 lg:p-6 lg:w-[25%] rounded shadow-md  mb-6">
       <h1 className=" text-2xl lg:4xl font-semibold">Subjects</h1>
 
       <div className=" mt-6 flex gap-4 lg:gap-2 lg:flex-col">
@@ -16,7 +16,7 @@ const Navbar = ({ exam, count, setCount, setSubmit }) => {
             <Link key={subject.name} to={`/${subject.name}`}>
               <div
                 onClick={() => setCount(index)}
-                className=" text-lg   capitalize font-medium text-gray-800 mb-1 flex items-center justify-between"
+                className=" lg:text-lg   capitalize font-medium text-gray-800 mb-1 flex items-center justify-between"
               >
                 <p
                   className={
