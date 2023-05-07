@@ -32,7 +32,7 @@ export const exam = [
   },
   {
     name: "mathematics",
-    instructions: "Identify the noun in the following sentences:",
+    instructions: "Solve the following Questions",
     questions: [
       {
         question:
@@ -66,7 +66,7 @@ export const exam = [
   },
   {
     name: "history",
-    instructions: "Identify the noun in the following sentences:",
+    instructions: "Identify the Correct Answers",
     questions: [
       {
         question: "Where did the Olympic Games originate?",
@@ -107,7 +107,7 @@ export const exam = [
   },
   {
     name: "sports",
-    instructions: "Identify the noun in the following sentences:",
+    instructions: "Pick the correct answer from the following questions",
     questions: [
       {
         question: "Who is the football player wit the most balon d or?",

@@ -53,7 +53,7 @@ const Home = () => {
         <div className=" flex justify-between">
           <div>
             <h1 className=" text-2xl lg:4xl font-semibold capitalize">RULES</h1>
-            <p className=" text-gray-500 capitalize">
+            <p className=" text-sm text-gray-500 capitalize">
               Please read the following instruction carefully
             </p>
           </div>

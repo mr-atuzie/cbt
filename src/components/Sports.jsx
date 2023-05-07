@@ -33,7 +33,9 @@ const Sports = ({ count, setCount, exam, submit, setSubmit }) => {
             <h1 className=" text-2xl lg:4xl font-semibold capitalize">
               {exam?.name}
             </h1>
-            <p className=" text-gray-500 capitalize">{exam?.instructions}</p>
+            <p className=" text-sm text-gray-500 capitalize">
+              {exam?.instructions}
+            </p>
           </div>
           {/* <div className="flex items-center gap-3">
             <h1 className=" font-semibold uppercase">score:</h1>
