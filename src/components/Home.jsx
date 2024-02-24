@@ -78,12 +78,8 @@ const Home = () => {
               course
             </li>
             <li className=" mb-2">
-              4. After yoy click the submit button , Enter the Name you want to
+              4. After you click the submit button , Enter the Name you want to
               appear on your certificate.
-            </li>
-            <li className=" mb-2">
-              5. After yoy click the submit button , Enter the Email you want to
-              your certificate sent to.
             </li>
           </ol>
         </div>
